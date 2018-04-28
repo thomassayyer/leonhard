@@ -1,0 +1,212 @@
+@charset 'UTF-8';
+
+@font-face {
+	font-family: 'Lovely Home';
+	src: url('../fonts/lovely-home.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fragment Core';
+	src: url('../fonts/fragment-core.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--primary-color: #2980b9; 
+	--success-color: #27ae60;
+	--warning-color: #f39c12;
+	--danger-color: #c0392b;
+	--black-color: #1e1e1e;
+	--white-color: white;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a, button {
+	cursor: pointer;
+}
+
+section {
+	width: 100%;
+	min-height: 100%;
+}
+
+#app_header {
+	padding: 30px;
+}
+
+#app_header h1 {
+	color: var(--success-color);
+	font-family: 'Lovely Home', Arial, sans-serif;
+	font-size: 50px;
+	margin: 0;
+}
+
+#home_section {
+	padding-top: 50px;
+	height: 77%;
+}
+
+#calc_section {
+	background-color: var(--success-color);
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+#calc_section .separator {
+	border: solid var(--white-color) 2px;
+}
+
+#calc_section .section-title, #calc_section .section-subtitle {
+	color: var(--white-color);
+}
+
+#calc_section h3.section-subtitle {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+#import_input_group {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#import_input_group label {
+	color: var(--white-color) !important;
+	font-weight: normal;
+}
+
+#matrix_table {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#matrix_table table {
+	margin-left: -14px;
+}
+
+#matrix_table thead th {
+	border: 0;
+	text-align: center;
+	color: var(--white-color);
+	font-weight: bold;
+}
+
+#matrix_table tbody tr > td {
+	color: var(--white-color);
+}
+
+#matrix_table tbody tr > td:nth-child(1) {
+	border: 0;
+	text-align: right;
+	font-weight: bold;
+	padding-right: 20px;
+	width: 5px;
+}
+
+#matrix_table tbody tr > td:not(:nth-child(1)) {
+	border: solid var(--white-color) 1px;
+}
+
+#matrix_table td {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+#matrix_size_buttons {
+	color: white;
+	width: 100px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#matrix_size_buttons a.btn-link {
+	color: white !important;
+}
+
+#graph_container {
+	height: 260px;
+	width: 100%;
+}
+
+#calc_button {
+	background-color: var(--white-color);
+	color: var(--success-color) !important;
+	margin-top: 25px;
+}
+
+#diameter_calc_subtitle {
+	margin-top: 30px;
+}
+
+#app_footer {
+	width: 100%;
+	padding: 50px;
+	text-align: center;
+	font-size: 17px;
+	color: var(--black-color);
+	font-family: 'Fragment Core', Arial, sans-serif;
+}
+
+.btn-rounded {
+	padding: 10px 20px;
+	width: 200px;
+	color: var(--white-color) !important;
+	background-color: var(--success-color);
+	border-radius: 20px;
+	text-align: center;
+	text-decoration: none !important;
+	font-size: 15px;
+}
+
+.block-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.section-title {
+	font-family: 'Fragment Core', Arial, sans-serif;
+	color: var(--black-color);
+	text-align: center;
+	font-size: 40px;
+}
+
+hr.separator {
+	width: 70px;
+	border: solid var(--success-color) 2px;
+}
+
+.section-subtitle {
+	max-width: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.bg-primary {
+	background-color: var(--primary-color);
+}
+
+.bg-success {
+	background-color: var(--success-color);
+}
+
+.bg-white {
+	background-color: var(--white-color);
+}
